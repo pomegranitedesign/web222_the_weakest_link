@@ -134,13 +134,17 @@ hr {
   width: 100%;
   display: flex;
   align-items: center;
-  background: red;
-  margin-top: 5%;
+  margin-top: 2%;
+  position: relative;
 }
 
 .money_container {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
+ 
+  width: 30%;
   height: 100%;
 }
 
@@ -149,11 +153,49 @@ hr {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border: none;
   border-radius: 50%;
-  width: 100%;
+  width: 20%;
   color: black;
   margin: 10px;
 }
 
 .active {
   background: red;
+}
+
+.wider {
+  max-width: 90%;
+}
+
+.questions_container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question {
+  max-width: 50%;
+}
+
+.answers {
+  margin-top: 100px;
+}
+
+.answer {
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  background: #3742fa;
+  display: block;
+  width: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.answer:hover {
+  background: #ff4757;
+  color: black;
 }
