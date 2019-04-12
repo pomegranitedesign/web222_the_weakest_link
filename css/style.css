@@ -60,6 +60,42 @@ html {
   color: black;
 }
 
+/* Get Name Styles */
+.name_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name_input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #4834d4;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.submit_button {
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px;
+  background: #2ed573;
+  color: black;
+  width: 300px;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.submit_button:hover {
+  background: #ff4757;
+  color: white;
+}
+
 /* Rules Page Styles */
 .heading-container {
   margin-top: 30px;
@@ -93,12 +129,6 @@ html {
   font-weight: 400;
 }
 
-/* .rules-container {
-}
-
-.rule {
-} */
-
 .rule__title {
   font-size: 3rem;
   font-weight: 900;
@@ -112,10 +142,6 @@ html {
   font-weight: 400;
   line-height: 1.5;
 }
-
-/* .cash-list {
-
-} */
 
 hr {
   width: 40px;
@@ -143,7 +169,6 @@ hr {
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
- 
   width: 30%;
   height: 100%;
 }
@@ -168,13 +193,14 @@ hr {
 
 .questions_container {
   height: 500px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .question {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .answers {
@@ -193,9 +219,73 @@ hr {
   color: white;
   cursor: pointer;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: none;
 }
 
 .answer:hover {
   background: #ff4757;
   color: black;
+}
+
+.answer:disabled {
+  background-color: #535c68;
+}
+
+.answer:hover:disabled {
+  color: white;
+}
+
+.player_information_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+  justify-content: center;
+}
+
+.player_information_container > #full_name {
+  font-size: 45px;
+  font-weight: 900;
+  color: #2f3542;
+  margin-bottom: 20px;
+}
+
+.player_information_container > h3 > #timer_text {
+  color: black;
+  font-size: 2rem;
+}
+
+.bank_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bank_button {
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  background: #ff6348;
+  display: block;
+  width: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: none;
+  margin-top: 10px;
+}
+
+.bank_button:hover {
+  background: #ff4757;
+  color: black;
+}
+
+.bank_button:disabled {
+  background-color: #535c68;
+}
+
+.bank_button:hover:disabled {
+  color: white;
 }
